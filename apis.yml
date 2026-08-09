@@ -12,18 +12,15 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sidecar-health.png
 name: Sidecar Health
-description: >-
-  Sidecar Health is a health insurance company founded in 2018 by Patrick Quigley
-  and Veronica Osetinsky and headquartered in Columbus, Ohio. It was built to bring
-  transparency to healthcare pricing, letting members see upfront cash prices for
-  care and share in the savings. After launching with supplemental coverage for
-  individuals, Sidecar established its own insurance carrier in 2021 and today serves
-  large employers with ACA-compliant major medical plans, offered both fully insured
-  and as administrative-services-only (ASO) for self-funded employers. It covers
-  members in 46 states across partners in 50 industries. Sidecar Health operates
-  member, provider, broker, and employer web portals plus a mobile app, but publishes
-  no public developer API, OpenAPI, or partner-integration documentation; this profile
-  captures its public identity and domain-security posture.
+description: Sidecar Health is a health insurance company founded in 2018 by Patrick Quigley and Veronica
+  Osetinsky and headquartered in Columbus, Ohio. It was built to bring transparency to healthcare pricing,
+  letting members see upfront cash prices for care and share in the savings. After launching with supplemental
+  coverage for individuals, Sidecar established its own insurance carrier in 2021 and today serves large
+  employers with ACA-compliant major medical plans, offered both fully insured and as administrative-services-only
+  (ASO) for self-funded employers. It covers members in 46 states across partners in 50 industries. Sidecar
+  Health operates member, provider, broker, and employer web portals plus a mobile app, but publishes
+  no public developer API, OpenAPI, or partner-integration documentation; this profile captures its public
+  identity and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/sidecar-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -33,7 +30,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-08'
 tags:
 - Company
 - Health Insurance
@@ -64,8 +61,12 @@ common:
   url: https://sidecarhealth.com/legal/terms-of-use
 - type: Login
   url: https://app.sidecarhealth.com/login
+- type: WellKnown
+  url: well-known/sidecar-health-well-known.yml
 x-enrichment:
   date: '2026-07-21'
   status: minimal
   artifacts_added: 1
   pass: local-v1
+x-merged-from:
+- sidecarhealth
